@@ -4,23 +4,25 @@ import axios from 'axios'
 function App() {
 
   // using fetchAPI : replacement for this is axios
-//   async function getRes(){
-//   const res = await fetch("http://localhost:8000/")
-//   let data = await res.json()
-//   .catch((e) => {
-//     console.log(e)
-//   })
-// }
+
+  async function getRes(){
+  const res = await fetch("http://localhost:8000/")
+  let data = await res.json()
+  .catch((e) => {
+    console.log(e)
+  })
+}
 
 // axios get used to get data from server
 
-// axios.get("http://localhost:8000/")
-// .then((e) => {
-//   console.log(e.data)
-// })
-// .catch((e)=>{
-//   console.log(e)
-// })
+async function getRes(){
+axios.get("http://localhost:8000/")
+.then((e) => {
+  console.log(e.data)
+})
+.catch((e)=>{
+  console.log(e)
+}) }
 
 
 
